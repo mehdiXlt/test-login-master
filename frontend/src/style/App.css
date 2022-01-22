@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../img/bg-intro-desktop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+}
+
+.home {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.home__title {
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.home__subtitle {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.home__discount {
+  background-color: hsl(248, 32%, 49%);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0px 7px 2px -2px rgba(0, 0, 0, 0.47);
+}
+
+.home__discount:hover {
+  background-color: hsl(248, 52%, 49%);
+  cursor: pointer;
+}
+
+.discount {
+  letter-spacing: 1px;
+}
+
+.blod {
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.form-div {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 2px -2px rgba(0, 0, 0, 0.17);
+}
+
+.form-control {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 10vh;
+}
+
+.submit__button {
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  height: 7vh;
+  margin-bottom: 2rem;
+}
+
+.submit__button:hover {
+  background-color: hsl(154, 89%, 51%);
+}
+
+.disc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.disc span {
+  text-align: center;
+  color: hsl(249, 10%, 26%);
+  font-size: 0.8rem;
+}
+
+.disc__link {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+}
+
+.disc__link:hover {
+  color: hsl(0, 100%, 64%);
+}
+
+@media screen and (min-width: 1140px) {
+  .main {
+    width: 100%;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(../img/bg-intro-desktop.png);
+    background-size: cover;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .home {
+    display: flex;
+    align-items: flex-start;
+    width: 60%;
+  }
+
+  .home__title {
+    font-size: 3rem;
+    font-weight: bolder;
+    align-self: start;
+  }
+
+  .home__subtitle {
+    width: 100%;
+    text-align: start;
+  }
+
+  .home__login {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home__discount {
+    font-size: 0.7rem;
+    width: 70%;
+  }
+
+  .form-div {
+    width: 70%;
+  }
+}
